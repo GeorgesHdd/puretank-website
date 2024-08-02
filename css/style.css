@@ -1,0 +1,287 @@
+Reset default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:white;
+    color: #333;
+    width: 98vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    filter: url(#goo);
+}
+
+.particle{
+    width: 100px;
+    height: 100px;
+    top: -20%;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    animation: fall 15s infinite; 
+}
+
+@keyframes fall{
+    0% {top: -20%;}
+    20% {top: 0%;}
+    80% {top: 85%;}
+    100% {top: 100%;}
+}
+
+.particle:nth-of-type(2n){
+    width: 60px;
+    height: 60px;
+}
+
+.particle:nth-of-type(3n){
+    width: 120px;
+    height: 120px;
+}
+
+.particle:nth-of-type(1){
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.particle:nth-of-type(2){
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.particle:nth-of-type(3){
+    left: 25%;
+    animation-delay: 3s;
+}
+
+.particle:nth-of-type(4){
+    left: 75%;
+    animation-delay: 4s;
+}
+
+.particle:nth-of-type(5){
+    left: 35%;
+    animation-delay: 5s;
+}
+
+.particle:nth-of-type(6){
+    left: 50%;
+    animation-delay: 6s;
+}
+
+.particle:nth-of-type(7){
+    left: 65%;
+    animation-delay: 7s;
+}
+
+.particle:nth-of-type(8){
+    left: 35%;
+    animation-delay: 8s;
+}
+
+.particle:nth-of-type(9){
+    left: 55%;
+    animation-delay: 9s;
+}
+
+.particle:nth-of-type(10){
+    left: 55%;
+    animation-delay: 10s;
+}
+
+.particle:nth-of-type(11){
+    left: 35%;
+    animation-delay: 11s;
+}
+
+.particle:nth-of-type(12){
+    left: 50%;
+    animation-delay: 12s;
+}
+
+.particle:nth-of-type(13){
+    left: 65%;
+    animation-delay: 13s;
+}
+.particle:nth-of-type(14){
+    left: 40%;
+    animation-delay: 14s;
+}
+.particle:nth-of-type(15){
+    left: 60%;
+    animation-delay: 15s;
+}
+
+.border{
+    position: absolute;
+    background-color: blue;
+}
+
+.border:nth-last-of-type(1){
+    top: 0;
+    left: 0;
+}
+
+.border:nth-last-of-type(2){
+    top: 0;
+    left: 0;
+}
+
+
+.logo img {
+    width: 450px;
+    
+}
+
+
+.social-icons a {
+    margin-right: 10px;
+    margin-bottom:20px ;
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.main-content2 {
+    float: left;
+    background-color:rgb(232, 232, 232);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin:10px 10px 30px 10px;
+}
+
+.main-content2 h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content2 p {
+    width: 50%;
+    float: left;
+    font-size:20px;
+    color: black;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+.main-content2 img {
+    float: right;
+    width: 35%;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    float: left;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin:10px 10px 30px 10px;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    float: left;
+    width: 50%;
+    font-size: 20px;
+    color:red;
+    line-height: 1.6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-content img {
+    float: left;
+    max-width: 30%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #777;
+    font-size: 14px;
+}
+
+.image-gallery {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px;
+    height:520px;
+}
+
+.image-gallery img {
+    height: 500px;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    body{
+        width: auto;
+    }
+
+    .main-content2, .main-content {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .main-content2 p, .main-content p {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .main-content2 img, .main-content img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 10px 0;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+}
+
+
